@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - techStore</title>
+    <meta name="description" content="Fale com a equipe da techStore.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Uma única requisição carrega todas as fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Sekuya&family=Sora:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="Contato">
+    <div id="site-header"></div>
+    <main id="conteudo" tabindex="-1">
+    <div class="container">
+    <div class="page-head">
+       <h1>Contato</h1>
+       <p>dúvida sobre um produto , pedido ou garantia? Escreva para a gente.</p>
+       </div>
+       <div class="two-col">
+        <form class="card form" id="contact-form"novalidate>
+         <div class="field">
+            <label for="nome">Nome</label>
+            <input class="input" id="nome"
+            name="nome" type="text" autocomplete="name" required aria-describedby="err-none">
+            <p class="error" id="err-nome"></p>
+         </div>
+         <div class="field">
+            <label for="email">E-mail</label>
+            <input class="input" id="email"
+            name="email" type="email"
+            autocomplete="name" required aria-describedby="err-nome">
+            <p class="error" id="err-nome"></p>
+         </div>   
+         <div class="field">
+        <label for="email">E-mail</label>
+        <input class="input" id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email">
+        <p class="error" id="err-email"></p>     
+         </div>
+         <div class="field">
+         <label for="assunto">assunto</label> 
+         <select class="select" id="assunto" name="assunto" required aria-describedby="err-assunto">
+          <option value="">Selecione</option>
+          <option>dúvida sobre um produto</option>  
+          <option >Acompanhar pedido</option>
+          <option>Trocas e devoluções</option>
+          <option>outro assunto</option>
+         </select>  
+        <p class="error" id="err-assunto"></p>
+         </div>
+         <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea class="textarea" id="mensagem" name="mensagem" required aria-describedby="err-mensagem"></textarea>  
+          <p class="error" id="err-mensagem"></p>
+         </div>
+        </form>
+
+       </div> 
+    </main>
+    
+</body>
+</html>
